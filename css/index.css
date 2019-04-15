@@ -1,14 +1,14 @@
 @font-face {
-  font-family: 'Open Sans';
+  font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
-  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v16/mem8YaGs126MiZpBA-UFVZ0e.ttf) format('truetype');
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'Quicksand';
+  font-family: 'Work Sans';
   font-style: normal;
   font-weight: 400;
-  src: local('Quicksand Regular'), local('Quicksand-Regular'), url(https://fonts.gstatic.com/s/quicksand/v9/6xKtdSZaM9iE8KbpRA_hK1QI.ttf) format('truetype');
+  src: local('Work Sans'), local('WorkSans-Regular'), url(https://fonts.gstatic.com/s/worksans/v4/QGYsz_wNahGAdqQ43Rh_fKDs.ttf) format('truetype');
 }
 /**
  * Global Reset of all HTML Elements
@@ -197,11 +197,6 @@ img {
   width: 800px;
   font-size: 1.8rem;
 }
-@media (max-width: 500px) {
-  .header-section nav {
-    align-items: center;
-  }
-}
 .header-section nav a {
   color: #FCFDFF;
   text-decoration: none;
@@ -224,7 +219,7 @@ img {
 .top-container .title-section {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 70vh;
   overflow: hidden;
   z-index: 1;
 }
@@ -239,10 +234,15 @@ img {
   width: 16rem;
   border-radius: 5px;
 }
-h2 {
+h2,
+h4 {
   color: #17B363;
 }
+.contact {
+  margin-top: 30px;
+}
 footer {
+  margin-top: 30px;
   width: 100%;
   display: flex;
   justify-content: center;
