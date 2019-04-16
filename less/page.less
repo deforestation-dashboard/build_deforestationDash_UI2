@@ -1,7 +1,22 @@
 // Page Styles
 
+
 h1 {
     font-size: 6rem;
+
+    @media @tablet {
+        font-size: 4rem;
+    }
+
+    @media @mobile {
+        font-size: 3rem;
+    }
+}
+
+.top-container {
+    @media @tablet {
+        height: 
+    }
 }
 
 .top-container .title-section {
@@ -10,6 +25,18 @@ h1 {
     height: 70vh;
     overflow: hidden;
     z-index: 1;
+
+    @media @tablet {
+        height: 45vh;
+    }
+
+    @media @mobile {
+        height: 55vh;
+    }
+
+    @media @mobileSmall {
+        height: 35vh;
+    }
 
     .title-button{
         background-color: @dark-purple;
@@ -38,8 +65,19 @@ h2, h4 {
 
 }
 
-.paragraph-content {
-    margin: 40px 0;
+#right-paragraph {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
+#right-paragraph .paragraph-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.body-content {
+    margin-bottom: 10rem;
+}
 

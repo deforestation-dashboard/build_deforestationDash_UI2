@@ -6,6 +6,12 @@
     justify-content: space-around;
     margin: 30px 0;
     z-index: 1;
+
+    @media @mobile {
+        height: 40px;
+        margin: 0;
+        margin-top: 30px;
+    }
 }
 .header-section nav {
     display: flex;
@@ -13,9 +19,19 @@
     width: 800px;
     font-size: 1.8rem;
 
+    @media @mobile {
+        justify-content: flex-end;
+    }
+
     a {
         color: @font-color;
         text-decoration: none;
     }
     
+}
+
+#dMap, #aboutUs, #getInContact {
+    @media @mobile {
+        display: none;
+    }
 }
