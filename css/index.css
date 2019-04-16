@@ -327,26 +327,22 @@ footer {
   display: flex;
   justify-content: center;
 }
-.top-container-about .header-section nav {
+.top-container-about .header-section {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
   display: flex;
-  justify-content: space-evenly;
-  width: 800px;
-  font-size: 1.8rem;
+  align-items: flex-start;
+  justify-content: space-around;
+  margin: 30px 0;
+  z-index: 1;
 }
-@media (max-width: 840px) {
-  .top-container-about .header-section nav {
-    justify-content: space-evenly;
-    font-size: 1.4rem;
-  }
+.title-content h1 {
+  margin-top: 27rem;
 }
-@media (max-width: 600px) {
-  .top-container-about .header-section nav {
-    justify-content: flex-end;
-  }
-}
-.top-container-about .header-section nav a {
-  color: #FCFDFF;
-  text-decoration: none;
+.title-content p {
+  margin-bottom: 27rem;
+  font-size: 2rem;
 }
 #forest-about {
   position: absolute;

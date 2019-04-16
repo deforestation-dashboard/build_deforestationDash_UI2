@@ -1,26 +1,25 @@
 // About
 
-
-.top-container-about .header-section nav {
+.top-container-about .header-section {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
     display: flex;
-    justify-content: space-evenly;
-    width: 800px;
-    font-size: 1.8rem;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin: 30px 0;
+    z-index: 1;
+}
 
-    @media @mobile {
-        justify-content: space-evenly;
-        font-size: 1.4rem;
-    }
+.title-content {
 
-    @media @mobileSmall {
-        justify-content: flex-end;
+    h1 {
+    margin-top: 27rem;
+}
+    p {
+    margin-bottom: 27rem;
+    font-size: 2rem;
     }
-
-    a {
-        color: @font-color;
-        text-decoration: none;
-    }
-    
 }
 
 #forest-about {
