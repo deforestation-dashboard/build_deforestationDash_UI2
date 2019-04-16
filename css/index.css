@@ -185,20 +185,6 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-.header-section {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-around;
-  margin: 30px 0;
-  z-index: 1;
-}
-@media (max-width: 840px) {
-  .header-section {
-    height: 40px;
-    margin: 0;
-    margin-top: 30px;
-  }
-}
 .header-section nav {
   display: flex;
   justify-content: space-evenly;
@@ -207,6 +193,12 @@ img {
 }
 @media (max-width: 840px) {
   .header-section nav {
+    justify-content: space-evenly;
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 600px) {
+  .header-section nav {
     justify-content: flex-end;
   }
 }
@@ -214,7 +206,7 @@ img {
   color: #FCFDFF;
   text-decoration: none;
 }
-@media (max-width: 840px) {
+@media (max-width: 600px) {
   #dMap,
   #aboutUs,
   #getInContact {
@@ -275,12 +267,17 @@ h1 {
 }
 @media (max-width: 1040px) {
   .top-container .title-section {
-    height: 45vh;
+    height: 55vh;
   }
 }
 @media (max-width: 840px) {
   .top-container .title-section {
-    height: 30vh;
+    height: 55vh;
+  }
+}
+@media (max-width: 600px) {
+  .top-container .title-section {
+    height: 35vh;
   }
 }
 .top-container .title-section .title-button {
@@ -305,6 +302,9 @@ h4 {
 .top-content {
   margin-top: 50px 20px;
 }
+.paragraph-content {
+  margin-bottom: 7rem;
+}
 #right-paragraph {
   display: flex;
   flex-direction: column;
@@ -314,9 +314,6 @@ h4 {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-}
-.body-content {
-  margin-bottom: 10rem;
 }
 footer {
   margin-top: 30px;

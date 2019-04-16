@@ -1,18 +1,5 @@
 // Navigation Styles
 
-.header-section {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-around;
-    margin: 30px 0;
-    z-index: 1;
-
-    @media @mobile {
-        height: 40px;
-        margin: 0;
-        margin-top: 30px;
-    }
-}
 .header-section nav {
     display: flex;
     justify-content: space-evenly;
@@ -20,6 +7,11 @@
     font-size: 1.8rem;
 
     @media @mobile {
+        justify-content: space-evenly;
+        font-size: 1.4rem;
+    }
+
+    @media @mobileSmall {
         justify-content: flex-end;
     }
 
@@ -31,7 +23,7 @@
 }
 
 #dMap, #aboutUs, #getInContact {
-    @media @mobile {
+    @media @mobileSmall {
         display: none;
     }
 }
