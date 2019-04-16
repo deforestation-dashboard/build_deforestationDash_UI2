@@ -143,7 +143,7 @@ html {
   font-size: 62.5%;
 }
 body {
-  background-color: #1b0c28;
+  background-color: #120719;
 }
 html,
 body {
@@ -186,14 +186,13 @@ img {
 .header-section {
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 30px 0;
   z-index: 1;
 }
 .header-section nav {
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   width: 800px;
   font-size: 1.8rem;
 }
@@ -216,6 +215,9 @@ img {
   left: 0;
   width: 100%;
 }
+h1 {
+  font-size: 6rem;
+}
 .top-container .title-section {
   position: relative;
   width: 100%;
@@ -224,15 +226,16 @@ img {
   z-index: 1;
 }
 .top-container .title-section .title-button {
-  background-color: #1b0c28;
+  background-color: #120719;
   color: #17B363;
   border-color: #17B363;
   opacity: 0.9;
   font-size: 1.6rem;
   margin-top: 32px;
-  height: 5rem;
-  width: 16rem;
-  border-radius: 5px;
+  height: 6rem;
+  width: 18rem;
+  border-radius: 4px;
+  cursor: pointer;
 }
 h2,
 h4 {
@@ -240,6 +243,12 @@ h4 {
 }
 .contact {
   margin-top: 30px;
+}
+.top-content {
+  margin-top: 50px 20px;
+}
+.paragraph-content {
+  margin: 40px 0;
 }
 footer {
   margin-top: 30px;
