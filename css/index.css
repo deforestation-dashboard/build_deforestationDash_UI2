@@ -209,7 +209,8 @@ img {
 @media (max-width: 600px) {
   #dMap,
   #aboutUs,
-  #getInContact {
+  #getInContact,
+  #home {
     display: none;
   }
 }
@@ -310,6 +311,11 @@ h4 {
   flex-direction: column;
   align-items: flex-end;
 }
+#right-about-paragraph {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
 #right-paragraph .paragraph-content {
   display: flex;
   flex-direction: column;
@@ -320,4 +326,33 @@ footer {
   width: 100%;
   display: flex;
   justify-content: center;
+}
+.top-container-about .header-section nav {
+  display: flex;
+  justify-content: space-evenly;
+  width: 800px;
+  font-size: 1.8rem;
+}
+@media (max-width: 840px) {
+  .top-container-about .header-section nav {
+    justify-content: space-evenly;
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 600px) {
+  .top-container-about .header-section nav {
+    justify-content: flex-end;
+  }
+}
+.top-container-about .header-section nav a {
+  color: #FCFDFF;
+  text-decoration: none;
+}
+#forest-about {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
 }
