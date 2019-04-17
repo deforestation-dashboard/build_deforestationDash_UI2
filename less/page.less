@@ -21,15 +21,15 @@ h1 {
     z-index: 1;
 
     @media @tablet {
-        height: 55vh;
+        height: 45vh;
     }
 
     @media @mobile {
-        height: 55vh;
+        height: 45vh;
     }
 
     @media @mobileSmall {
-        height: 35vh;
+        height: 25vh;
     }
 
     .title-button{
@@ -43,6 +43,12 @@ h1 {
         width: 18rem;
         border-radius: 4px;
         cursor: pointer;
+
+        @media @mobile {
+            height: 4rem;
+            width: 14rem;
+            font-size: 1.4rem;
+        }
     }
 }
 
@@ -59,19 +65,30 @@ h2, h4 {
 
 }
 
-.paragraph-content {
-    margin-bottom: 7rem;
+.left-paragraph {
+    display: flex;
+    align-items: center;
+    margin: 7rem 0;
 }
 
 #right-paragraph {
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
+    margin: 7rem 0;
 }
 
 #right-paragraph .paragraph-content {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-}
+ }
 
+footer p{
+    width: 100%;
+    margin-top: 10rem;
+
+    @media @mobile {
+        font-size: 1rem;
+        margin-top: 5rem;
+    }
+}

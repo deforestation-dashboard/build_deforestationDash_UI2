@@ -9,17 +9,55 @@
     justify-content: space-around;
     margin: 30px 0;
     z-index: 1;
+
+    @media @tablet {
+        margin: 10px 0;
+    }
+
+    @media @mobile {
+        margin-top: 5px;
+    }
 }
 
 .title-content {
 
+    margin-top: 20rem;
+
+    @media @tablet {
+        margin-top: 10rem;
+    }
+
+    @media @mobile {
+        margin-top: 5rem;
+    }
+
     h1 {
-        margin-top: 27rem;
+        margin-top: 5rem;
+
+        @media @tablet {
+            margin-top: 10rem;
+        }
+
+        @media @mobile {
+            margin-top: 7rem;
+        }
     }
 
     p {
         margin-bottom: 27rem;
         font-size: 2rem;
+
+        @media @tablet {
+        }
+
+        @media @mobile {
+            font-size: 1.4rem;
+            margin-bottom: 25rem;
+        }
+
+        @media @mobileSmall {
+            margin-bottom: 5rem;
+        }
     }
 }
 
@@ -33,11 +71,20 @@
 
 .body-content-about {
 
-    padding: 15rem 0;
+    padding-top: 20rem;
     width: 100%;
+
+    @media @tablet {
+        padding-top: 5rem;  
+    }
+
+    @media @mobile {
+        padding-top: 0;
+    }
 
     .content-section {
         width: 100%;
+        padding: 30px 0;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -58,17 +105,22 @@
 
             @media @mobile {
                 width: 100%;
-                padding: 0 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
             }
         }
 
         .img-content {
             width: 48%;
+            display: flex;
+            justify-content: flex-end;
 
             @media @mobile {
-                width: 100%;
-                margin: 0;
-                padding: 0px 25px;
+                justify-content: center;
+                margin: 20px;
             }
 
             img {
@@ -79,10 +131,25 @@
             }
         }
 
-        .fab .fa-github-square .fa-2x {
-            color: @green;
+        .img-content-inverse {
+            width: 48%;
+            display: flex;
+            justify-content: flex-start;
+
+            @media @mobile {
+                justify-content: center;
+                margin: 20px;
+            }
+
+            img {
+                border-radius: 50%;
+                height: 50%;
+                width:50%;
+                border: 4px solid @green;
+            }
         }
     }
+
 
     .inverse-content {
         width: 100%;
@@ -97,15 +164,18 @@
             align-content: center;
             padding-bottom: 20px;
         }
-
         .text-content {
-            padding-left: 1%;
-            padding-right: 0;
-        }
+            width: 48%;
 
-        .img-content {
-            padding-right: 1%;
-            padding-left: 0;
+            p {
+                font-size: 1.8rem;
+            }
+
+            @media @mobile {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+            }
         }
     }
 }
