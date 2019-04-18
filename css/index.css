@@ -443,6 +443,7 @@ footer {
   left: 0;
   width: 100%;
   z-index: -1;
+  border-bottom: 1px solid #FCFDFF;
 }
 .body-content-about {
   padding-top: 20rem;

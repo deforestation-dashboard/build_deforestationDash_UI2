@@ -1,13 +1,13 @@
 let carousels = document.getElementsByClassName("image-carousel");
 
-[].forEach.call(carousels, function (element){
+[].forEach.call(carousels, function (element) {
     let next = element.getElementsByClassName("next")[0],
-    prev = element.getElementsByClassName("prev")[0],
-    bubblesContainer = element.getElementsByClassName("bubbles")[0],
-    inner = element.getElementsByClassName("inner")[0],
-    imgs = inner.getElementsByTagName("img"),
-    currentImageIndex = 0,
-    width = 640;
+        prev = element.getElementsByClassName("prev")[0],
+        bubblesContainer = element.getElementsByClassName("bubbles")[0],
+        inner = element.getElementsByClassName("inner")[0],
+        imgs = inner.getElementsByTagName("img"),
+        currentImageIndex = 0,
+        width = 640;
     bubbles = [];
 
     for (let i = 0; i < imgs.length; i++) {
@@ -16,8 +16,8 @@ let carousels = document.getElementsByClassName("image-carousel");
         bubblesContainer.appendChild(b);
         bubbles.push(b);
 
-        b.addEventListener('click', function (){
-            currentImageIndex= i;
+        b.addEventListener('click', function () {
+            currentImageIndex = i;
             switchImg();
         });
     }
@@ -26,7 +26,7 @@ let carousels = document.getElementsByClassName("image-carousel");
         inner.style.left = -width * currentImageIndex + 'px';
 
         bubbles.forEach(function (b, i) {
-            if (i === currentImageIndex){
+            if (i === currentImageIndex) {
                 b.classList.add('active');
             } else {
                 b.classList.remove('active');
@@ -34,7 +34,7 @@ let carousels = document.getElementsByClassName("image-carousel");
         })
     }
 
-    next.addEventListener('click', function (){
+    next.addEventListener('click', function () {
         currentImageIndex++;
 
         if (currentImageIndex >= imgs.length) {
@@ -44,7 +44,7 @@ let carousels = document.getElementsByClassName("image-carousel");
         switchImg();
     });
 
-    prev.addEventListener('click', function (){
+    prev.addEventListener('click', function () {
         currentImageIndex--;
 
         if (currentImageIndex < 0) {
